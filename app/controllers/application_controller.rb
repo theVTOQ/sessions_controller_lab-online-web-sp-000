@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    redirect_to controller: "sessions", action: "login" if !logged_in?
+    redirect_to controller: "sessions", action: "new" if !logged_in?
   end
 end
